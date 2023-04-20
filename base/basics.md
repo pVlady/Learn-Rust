@@ -1,5 +1,6 @@
 # Базовые элементы языка
-[The Rust Programming Language](https://doc.rust-lang.org/book/title-page.html)
+[The Rust Programming Language](https://doc.rust-lang.org/book/title-page.html)  
+<a href="https://doc.rust-lang.org/book/title-page.html" target="_blank">The Rust Programming Language</a>
 ----
 
 ## Переменные
