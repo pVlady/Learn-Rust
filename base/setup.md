@@ -1,6 +1,6 @@
 # Установка rust
 ### Windows
-C [сайта](https://www.rust-lang.org/tools/install) по ссылке `DOWNLOAD RUSTUP-INIT.EXE (64-BIT)` скачиваем установщик и запускаем его.
+C [официального сайта](https://www.rust-lang.org/tools/install) по ссылке `DOWNLOAD RUSTUP-INIT.EXE (64-BIT)` скачиваем и запускаем установщик rust.
 
 ### Linux
 Выполняем с правами администратора:
