@@ -135,4 +135,11 @@ let numbers = 1..=9;                                 // число 9 включ�
 * 
 
 ## References
+* [The Rust Programming Language](https://doc.rust-lang.org/book/title-page.html)
+* [Руководство по языку программирования Rust](https://metanit.com/rust/tutorial/)
 * [Уроки по языку программирования Rust](https://www.youtube.com/playlist?list=PLQQFvHDqx-V8Qjj-oyga0tYSCKzq5DJQE)
+* [Rust на примерах](https://doc.rust-lang.ru/stable/rust-by-example/index.html)
+* [Маленькая книжка по макросам в Rust]([https://github.com/rust-lang-ru/tlborm/tree/master/text](https://github.com/rust-lang-ru/tlborm))
+* [Растономикон](https://github.com/rust-lang-ru/nomicon)
+* [Руководство по Cargo](https://rurust.github.io/cargo-docs-ru/guide.html)
+* [The Car](https://doc.rust-lang.org/cargo/index.html)
