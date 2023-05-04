@@ -145,4 +145,4 @@ let numbers = 1..=9;                                 // число 9 включ�
 * [Руководство по Cargo](https://rurust.github.io/cargo-docs-ru/guide.html)
 * [The Cargo](https://doc.rust-lang.org/cargo/index.html)
 * [The Rust Edition Guide](https://doc.rust-lang.org/edition-guide/editions/creating-a-new-project.html)
-* 
+* **[A half-hour to learn Rust](https://fasterthanli.me/articles/a-half-hour-to-learn-rust)**
