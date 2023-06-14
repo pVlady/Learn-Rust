@@ -17,7 +17,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ## Настройка редактора SublimeText
 Последовательно устанавливаем следующие плагины:
  * _RustEnhanced_
- * _TOML_ — для удобства редактирования toml-файлов
+ * _TOML_ — для подсветки синтаксиса _toml_-файлов
  * _LSP_ — language server
  * _LSP-rust-analyzer_
  * _Sublime Projects_ — для удобства организации проектов
