@@ -16,7 +16,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 ## Настройка редактора SublimeText
 Последовательно устанавливаем следующие плагины:
- * _RustEnhanced_ — замена встроенного пакета поддержки языка _Rust_ (добавляет улучшенную подсветку синтаксиса, вывода Cargo, кастомизацию сборки приложения + автосохранение файлов)
+ * _RustEnhanced_ — замена встроенного пакета поддержки языка _Rust_ (добавляет улучшенную подсветку синтаксиса, вывода Cargo, кастомизацию сборки приложения + автосохранение файлов, см. _[Rust Enhanced User Guide](https://rust-lang.github.io/rust-enhanced/index.html))_
  * _TOML_ — обеспечивает подсветку синтаксиса файла _Cargo.toml_
  * _LSP_ — language server
  * _LSP-rust-analyzer_
