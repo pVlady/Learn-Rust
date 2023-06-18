@@ -41,6 +41,32 @@ fn main() -> std::io::Result<()> {
 }
 ```
 
+### Перебор объектов в каталоге
+Итератор `WalkDir` рекурсивно проходит по всем объектам файловой системы указанного каталога.\
+Функция `into_iter()` преобразует итератор `WalkDir` в регулярный итератор, что позволяет использовать функцию `filter_map()`, подавляя любые ошибки, которые могут возникнуть в процессе выполнения операции (напр., отсутствие необходимых прав доступа). С помощью `file_type()` проверяем, что текущий итерируемый объект является файлом, а не каталогом или ссылкой.
+```toml
+[dependencies]
+walkdir = "2.3.1"
+```
+```rust
+use std::path::Path;
+use walkdir::WalkDir;
+let root = Path::new("/path/to/directory");
+for entry in WalkDir::new(root).into_iter().filter_map(|e| e.ok()) {
+    if entry.file_type().is_file() {
+        println!("{}", entry.path().display());
+    }
+}
+
+// вывод содержимого каталога в виде дерева
+let dir = "/path/to/directory";
+for entry in WalkDir::new(dir) {
+    let entry = entry.unwrap();
+    let level = entry.depth();    // возвращает глубину вложения относительно корня просмотра
+    println!("{}{}", "--".repeat(level), entry.file_name().to_string_lossy());
+}
+```
+
 ## Дополнительные операции с файловой системой
 ```rust
 use dirs;
