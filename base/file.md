@@ -62,8 +62,7 @@ use md5::{Digest, Md5};
 let message = "Hello, world!";
 let mut hasher = Md5::new();
 hasher.update(message.as_bytes());
-let result = hasher.finalize();
-println!("{:x}", result);               // вывод md5-хэша в шестнадцатиричном виде
+println!("{:x}", hasher.finalize());               // вывод md5-хэша в шестнадцатиричном виде
 ```
 
 ### SHA1
@@ -76,3 +75,50 @@ let mut hasher = Sha1::new();
 let n = io::copy(&mut file, &mut hasher)?;
 let hash = hasher.finalize();
 ```
+
+### SHA256
+Manual version
+```rust
+let file = std::fs::File::open($path)?;
+let mut reader = std::io::BufReader::new(file);
+let mut sha256: sha2::Sha256 = sha2::Digest::new();
+let mut buffer = [0; 1024];
+loop {
+    let count = std::io::Read::read(&mut reader, &mut buffer)?;
+    if count == 0 { break; }
+    sha2::Digest::update(&mut sha256, &buffer[..count]);
+}
+println!("{:x}", sha2::Digest::finalize(sha256));
+```
+
+```rust
+use std::fs::File;
+use std::io::prelude::*;
+use sha2::{Sha256, Digest};
+
+fn main() -> std::io::Result<()> {
+    let mut file = File::open("path/to/file")?;
+    let mut hasher = Sha256::new();
+    let mut buffer = [0; 1024];  // последовательное чтение содержимого файла в буфер
+    loop {
+        let bytes_read = file.read(&mut buffer)?;
+        if bytes_read == 0 { break; }        
+        hasher.update(&buffer[..bytes_read]);  // обновить hasher данными из буфера
+    }
+    let result = hasher.finalize();  // конечный результат в виде byte array
+    println!("{:x}", result);
+    Ok(())
+}
+```
+
+Сокращенная версия без детализации буферного чтения
+```rust
+let input = std::fs::File::open($path)?;
+let mut reader = std::io::BufReader::new(input);
+let mut sha256: sha2::Sha256 = sha2::Digest::new(); 
+std::io::copy(&mut reader, &mut sha256)?; 
+println!("{:x}", sha2::Digest::finalize(sha256));
+```
+
+
+
