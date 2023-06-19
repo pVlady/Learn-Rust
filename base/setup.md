@@ -21,4 +21,20 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
  * _LSP_ — language server
  * _LSP-rust-analyzer_ — см. _[User Manual](https://rust-analyzer.github.io/manual.html)_
  * _Sublime Projects_ — для удобства организации проектов
- 
+ * для форматирования кода можно установить _[RustFmt](https://packagecontrol.io/packages/RustFmt)_
+
+_Clippy_ для проверки синтаксиса указываем в Настройках _Rust Enhanced_:
+```json
+{
+  "rust_syntax_checking": true,
+  "rust_syntax_checking_method": "clippy",
+}
+```
+
+ ## Настройка VS Code
+ [Пишем с комфортом на Rust в VS Code](https://habr.com/ru/articles/645797/)
+ * Со [страницы загрузки Microsoft](https://visualstudio.microsoft.com/ru/downloads/) из раздела "Инструменты для Visual Studio" скачиваем "Инструменты сборки для Visual Studio 2022". Запускаем инсталлятор и выбираем пункт "Разработка классических приложений на C++".
+ * Для подсветки синтаксиса и автодополнений устанавливаем расширение _rust-analyzer_ (алльтернатива _Rust_ работает чуть хуже и они конфликтуют между собой).
+ * Для отладки устанавливаем расширение _CodeLLDB_.
+ * Для работы с _toml_ ставим плагины _[Even Better TOML](https://marketplace.visualstudio.com/items?itemName=tamasfe.even-better-toml)_ (для подсветки), _[crates](https://marketplace.visualstudio.com/items?itemName=serayuzgur.crates)_ для удобного обновления зависимостей, и _[crates completer](https://marketplace.visualstudio.com/items?itemName=jedeop.crates-completer)_ для автодополнения имён пакетов и версий.
+ * Устанавливаем планины _[Test Explorer UI](https://marketplace.visualstudio.com/items?itemName=hbenl.vscode-test-explorer)_ и _[Rust Test Explorer](https://marketplace.visualstudio.com/items?itemName=swellaby.vscode-rust-test-adapter)_, чтобы запускать тесты из боковой панели, а не из консоли.
