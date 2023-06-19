@@ -101,4 +101,5 @@ fn by_ref(x: &i32) -> f32 { ... }  ; передача аргумента по с
 ## References
 * [Rust | Programiz](https://www.programiz.com/rust/getting-started)
 * [A Gentle Introduction To Rust](https://stevedonovan.github.io/rust-gentle-intro/readme.html)
+* [Язык программирования Rust](https://doc.rust-lang.ru/book/title-page.html)
 
