@@ -23,7 +23,15 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
  * _Sublime Projects_ — для удобства организации проектов
  * для форматирования кода можно установить _[RustFmt](https://packagecontrol.io/packages/RustFmt)_
 
-_Clippy_ для проверки синтаксиса указываем в Настройках _Rust Enhanced_:
+_Clippy_ — это набор правил для анализа rust-кода. Установка:
+```bash
+$ rustup component add clippy
+```
+Запуск проверок Clippy’s для проекта Cargo:
+```bash
+$ cargo clippy
+```
+Для испльзования _Сlippy_ указываем в настройках _Rust Enhanced_:
 ```json
 {
   "rust_syntax_checking": true,
