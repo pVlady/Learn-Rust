@@ -179,3 +179,4 @@ match var_x { true => 6, false => 4, }
 * [The Cargo](https://doc.rust-lang.org/cargo/index.html)
 * [The Rust Edition Guide](https://doc.rust-lang.org/edition-guide/editions/creating-a-new-project.html)
 * **[A half-hour to learn Rust](https://fasterthanli.me/articles/a-half-hour-to-learn-rust)**
+* [17 Resources to Help You Learn Rust in 2023](https://serokell.io/blog/learn-rust)
