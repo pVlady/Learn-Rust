@@ -14,6 +14,12 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ## Оффлайн установка
 Оффлайн установщики для различных платформ можно скачать [отсюда](https://forge.rust-lang.org/infra/other-installation-methods.html).
 
+## Обновление версии
+Если Rust установлен с помощью rustup, то для обновления достаточно выполнить в консоли:
+```bash
+$ rustup update stable
+```
+
 ## Настройка редактора SublimeText
 Последовательно устанавливаем следующие плагины:
  * _RustEnhanced_ — замена встроенного пакета поддержки языка _Rust_ (добавляет улучшенную подсветку синтаксиса, вывода Cargo, кастомизацию сборки приложения + автосохранение файлов, см. _[Rust Enhanced User Guide](https://rust-lang.github.io/rust-enhanced/index.html))_
