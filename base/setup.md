@@ -5,7 +5,7 @@
 ### Windows
 C [официального сайта](https://www.rust-lang.org/tools/install) по ссылке `DOWNLOAD RUSTUP-INIT.EXE (64-BIT)` скачиваем и запускаем установщик rust.
 Программа проверит наличие необходимых компонентов и при их отсутствии предложит установить с помощью Microsoft Visual Studio Installer:
-  * Desktop Development with C++
+  * Desktop Development with C++ (блок Разработка классических приложений на C++ - все дополнительные компоненты в блоке отключаем)
   * The Windows 10 or 11 SDK
   * The English language pack component, along with any other language pack of your choosing
 
