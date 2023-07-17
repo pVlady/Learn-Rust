@@ -3,11 +3,13 @@
 ## Online установка
 
 ### Windows
-C [официального сайта](https://www.rust-lang.org/tools/install) по ссылке `DOWNLOAD RUSTUP-INIT.EXE (64-BIT)` скачиваем и запускаем установщик rust.
-Программа проверит наличие необходимых компонентов и при их отсутствии предложит установить с помощью Microsoft Visual Studio Installer:
-  * Desktop Development with C++ (блок _Разработка классических приложений на C++_ - установку дополнительных компонентов в блоке отключаем)
-  * The Windows 10 or 11 SDK
-  * The English language pack component, along with any other language pack of your choosing
+C [официального сайта](https://www.rust-lang.org/tools/install) по кнопке `DOWNLOAD RUSTUP-INIT.EXE (64-BIT)` скачиваем и запускаем установщик _rust_.
+Программа проверит наличие необходимых компонентов и при их отсутствии предложит установить их с помощью _Microsoft Visual Studio Installer_.
+Минимально необходимые компоненты находятся в блоке _Разработка классических приложений на C++_:
+* MSVC v143 - VS 2022 C++ x64/x86 build tools (Latest)
+* Windows 10 или 11 SDK (10.0.xxxxx.0)
+
+Также может понадобиться _The English language pack_, либо языковые пакеты для используемого языка.
 
 ### Linux
 Выполняем с правами администратора:
