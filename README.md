@@ -16,3 +16,4 @@
 ### WEB-материалы
 * [Rust Anthology Master List](https://github.com/brson/rust-anthology/blob/master/master-list.md)
 * [rustlings](https://github.com/rust-lang/rustlings) — упражнения по Rust
+* [Большая шпаргалка по rust](https://my-js.org/docs/cheatsheet/rust/)
